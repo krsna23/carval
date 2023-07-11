@@ -1,0 +1,61 @@
+<button class = "button">Provide Report</button>
+
+
+
+<ng-template #modalId let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Get Valuation</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body ">
+  
+      <form [formGroup]="reportForm" >
+        <!-- <label class="label">Email :</label>
+        <input formControlName="name" />
+       -->
+        <div class="entry">
+          <label class="label">Model: </label>
+          <input class="textfield" formControlName="model" />      
+        </div>
+  
+        <div class="entry">
+          <label class="label">Make: </label>
+          <input class="textfield" formControlName="make" />      
+        </div>
+  
+        <div class="entry">
+          <label class="label">Year: </label>
+          <input class="textfield" formControlName="year" />      
+        </div>
+  
+        <div class="entry">
+          <label class="label">Mileage: </label>
+          <input class="textfield" formControlName="mileage" />      
+        </div>
+  
+        <div class="entry">
+          <label class="label">Latitude: </label>
+          <input class="textfield" formControlName="latitude" />      
+        </div>
+  
+        <div class="entry">
+          <label class="label">Longitude: </label>
+          <input class="textfield" formControlName="longitude" />      
+        </div>
+  
+        <!-- <div class="error" *ngIf="emailForm.controls.name.errors?.['email'] && emailForm.controls.name.touched">Invalid format.</div> -->
+        <!-- <div>
+          <button [disabled]="emailForm.invalid" class="btn submit" type="submit">Submit</button>
+        </div> -->
+  
+      </form>
+      
+      <!-- <p>Modal body text goes here.</p> -->
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+      <button type="button" class="btn btn-primary" (click)="submitForm()">Save changes</button>
+    </div>
+  </ng-template>

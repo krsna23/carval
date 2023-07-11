@@ -1,0 +1,36 @@
+.navbar{
+    padding: 5px;
+    height: 95px;
+    max-height: fit-content;
+}
+.menu{
+    justify-content: right;
+    font-family: cursive;
+    font-size: 27px;
+    font-weight: bold;
+}
+.navbar-brand{
+    display: flex;
+}
+
+.title{
+    font-size: 36px;
+    color: #E97000;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-top: 4px;
+}
+
+.menu1{
+margin-right: 30px;
+color: #c4347c;
+}
+
+.menu2{
+    background-color: #c4347c;
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    height: 50px;
+}

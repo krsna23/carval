@@ -1,0 +1,76 @@
+<button class="button" (click)="openModal(modalId)">Get Valuation</button>
+
+<ng-template #modalId let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Get Valuation</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body ">
+
+    <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+      <!-- <label class="label">Email :</label>
+      <input formControlName="name" />
+     -->
+
+      <div class="entry">
+        <label class="label">Model: </label>
+        <input class="textfield" formControlName="model" />      
+        <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.model.errors?.['maxlength'] && emailForm.controls.model.touched">* Enter Valid data</div>
+      </div>
+
+      <div class="entry">
+        <label class="label">Make: </label>
+        <input class="textfield" formControlName="make" />      
+        <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.make.errors?.['maxlength'] && emailForm.controls.make.touched">* Enter in valid format</div>
+      </div>
+
+      <div class="entry">
+        <label class="label">Year: </label>
+        <input class="textfield" formControlName="year" />      
+        <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.year.errors?.['maxlength'] && emailForm.controls.year.touched">* Enter in valid format</div>
+
+      </div>
+
+      <div class="entry">
+        <label class="label">Mileage: </label>
+        <input class="textfield" formControlName="mileage" />      
+        <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.mileage.errors?.['maxlength'] && emailForm.controls.mileage.touched">* Enter in valid format</div>
+
+      </div>
+
+      <div class="entry">
+        <label class="label">Latitude (in  Decimal degrees (DD) format): </label>
+        <input class="textfield" formControlName="latitude" />      
+        <div class="text-danger mx-auto p-2" role="alert"  *ngIf="emailForm.controls.latitude.errors?.['maxlength'] && emailForm.controls.latitude.touched">* Enter in valid format</div>
+
+      </div>
+
+      <div class="entry">
+        <label class="label">Longitude in  Decimal degrees (DD) format: </label>
+        <input class="textfield" formControlName="longitude" />      
+        <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.longitude.errors?.['maxlength'] && emailForm.controls.longitude.touched">* ENTER IN VALID FORMAT</div>
+      </div>
+
+      <!-- <div class="error" *ngIf="emailForm.controls.name.errors?.['email'] && emailForm.controls.name.touched">Invalid format.</div> -->
+      <!-- <div>
+        <button [disabled]="emailForm.invalid" class="btn submit" type="submit">Submit</button>
+      </div> -->
+      <div class="text-danger mx-auto p-2" role="alert" 
+        *ngIf="emailForm.controls.model.errors?.['required'] || emailForm.controls.make.errors?.['required']
+        || emailForm.controls.year.errors?.['required'] || emailForm.controls.latitude.errors?.['required']
+        || emailForm.controls.longitude.errors?.['required'] || emailForm.controls.mileage.errors?.['required']
+        ">* Must fill in all the fields</div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+        <button type="button" class="btn btn-primary" (click)="onSubmit()">Save changes</button>
+        
+      </div>
+    </form>
+    
+    <!-- <p>Modal body text goes here.</p> -->
+  </div>
+
+</ng-template>

@@ -1,0 +1,34 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>CarVal</title>
+</head>
+<body>
+	<header>
+		<h1>Car Valuation</h1>
+	</header>
+	<main>
+
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="..\assets\Photos\Logo.jpg"> 
+          CarVal  
+        </a>
+        <div class="navbar-nav menu">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </nav>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 My Website</p>
+	</footer>
+</body>
+</html> -->
+<- NavBar ->
+
+
