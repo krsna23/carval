@@ -14,8 +14,8 @@
         <p class="des">We're here to provide you with an easy, reliable and comprehensive solution that takes the guesswork out of the vehicle valuation.</p>
     </div>
 
-    <app-estimate></app-estimate>
-    <app-report></app-report>
+    <app-estimate (carDataEvent)="carData($event)"></app-estimate>
+    <app-report (getData)="getData($event)"></app-report>
     <!-- <button class="button" (click)="openModal()">Get Valuation</button> -->
 
     <p class="note">You can also help us improve our service by providing report after vehicle is sold.</p>

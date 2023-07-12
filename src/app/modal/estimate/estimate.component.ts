@@ -49,17 +49,26 @@ export class EstimateComponent {
 
   });
   
-  car!: Car;
+  car: Car = {
+    model:'',
+    make: 0,
+    year: 0,
+    mileage:0,
+    latitude: 0,
+    longitude: 0
+  };
   constructor(private modalService: NgbModal){}
 
   openModal(content: any){
-    console.log("CLicked the button");
+    //console.log("CLicked the button");
     this.modalService.open(content);
   }
 
   onSubmit(){
    const modelE= this.emailForm.controls.model.errors;
-    console.log("submit");
+    //console.log("submit");
+    //console.log(this.car);
+
     this.car = {
       model: this.emailForm.value.model!,
       make: parseInt(this.emailForm.value.make!),
@@ -67,10 +76,9 @@ export class EstimateComponent {
       mileage: parseInt(this.emailForm.value.mileage!),
       latitude: parseInt(this.emailForm.value.latitude!),
       longitude: parseInt(this.emailForm.value.longitude!)
-
     }
-    console.log(this.car);
+    //console.log(this.car);
     this.carDataEvent.emit(this.car);
-    console.log(modelE);
+    //console.log(modelE);
   }
 }
