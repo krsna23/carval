@@ -1,10 +1,10 @@
 
 .lin{
     display: flex;
-    padding-top: 65px;
-    margin-left: 420px;
-
+    padding-top: 3vw;
+    margin-left: 32vw;
 }
+
 .hel{
     font-size: 24px;
     color: #EC8220;
@@ -25,7 +25,7 @@
 
 .line1{
     display:flex;
-    margin-left: 350px;
+    margin-left: 25vw;
 }
 
 .com{
@@ -60,11 +60,57 @@
 
 .note{
     font-weight: bold;
-    margin-left: 350px;
-    padding-bottom: 60px;
-    padding-top: 30px;
+    margin-left: 27vw;
+    padding-bottom: 57px;
+    padding-top: 28px;
 }
 
 .all{
     background-color: #f7f7f7;
 }
+
+
+@media (max-width: 768px) {
+    .lin{
+        padding-top: 28vw;
+        margin-left: 2vw;
+    }
+
+    .line1{
+        display:flex;
+        margin-left: 3vw;
+
+    }
+    
+    .titl{
+        font-size: 10vw;
+        color: #E97000;
+        font-family: monospace;
+    }
+
+    .body{
+        background-image: url(..\assets\Photos\background.jpg);
+        size:90%;
+        height:65vh;
+    }
+
+    .com{
+        margin-top:45px;
+        margin-left: -15vw;
+    }
+
+    .des{
+        font-size: large;
+        margin-bottom: 10vw;
+        margin: 5vw;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+    
+    .note{
+        margin-left: 10vw;
+        padding-bottom: 57px;
+        padding-top: 28px;
+    }
+}
+

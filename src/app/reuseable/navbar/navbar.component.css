@@ -34,3 +34,49 @@ color: #c4347c;
     text-align: center;
     height: 50px;
 }
+
+@media (max-width: 768px) {
+
+    /* .navbar{
+        padding: 5px;
+        height: 95px;
+        max-height: fit-content;
+    } */
+
+    .menu{
+        justify-content: right;
+        font-family: cursive;
+        font-size: 27px;
+        font-weight: bold;
+    }
+    
+    .navbar-brand{
+        display: flex;
+    }
+    
+    .title{
+        font-size: 8vw;
+        color: #E97000;
+        font-weight: bold;
+        margin-left: 3vw;
+        margin-top: 4px;
+    }
+    
+    .menu1{
+    margin-right: 30px;
+    color: #c4347c;
+    }
+    
+    .menu2{
+        background-color: #c4347c;
+        color: white;
+        border-radius: 20px;
+        width: 200px;
+        text-align: center;
+        height: 50px;/* Adjust padding for the navbar links */
+        .navbar-nav {
+          padding: 5px; /* Adjust as needed */
+        }
+    }
+
+}

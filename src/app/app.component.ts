@@ -39,7 +39,7 @@ export class AppComponent {
   }
   carData(carData: Car){
     console.log("data parent", carData);
-    this.apiService.postData(carData);
+    //this.apiService.postData(carData);
   }
 
   getData(id: string){

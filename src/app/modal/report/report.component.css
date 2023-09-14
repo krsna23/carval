@@ -1,9 +1,26 @@
 .button{
     font-size: 32px;
     background-color: #C53678;
-    margin: 30px 0 50px 200px;
+    margin: 30px 0 50px 15vw;
     color:white;
     border: none;
     border-radius: 20px;
-    width:350px;
+    width:27vw;
+}
+
+.entry{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.textfield{
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .button{
+        font-size: 6vw;
+        margin: 3vw 0 3vw 25vw;
+        width:50vw;
+    }
 }

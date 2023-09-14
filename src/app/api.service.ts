@@ -34,12 +34,16 @@ export class ApiService {
         // Handle the error here if needed
       }
     );;
+
+    
     //console.log("Data Posted");
   }
 
   //Making use of reports-model for now to practice get requests
+    // In the site, Go to reports and in the 'make' give id:
+
   getCar(id: string){
-    console.log("GET route");
+    console.log("GET route: " + id);
     return this.http.get(environment.apiUrl + '/estimate'+ `/${id}`).pipe(
       map((response: any) => response?.make)
     ).subscribe({
