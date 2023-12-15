@@ -15,42 +15,55 @@
      -->
 
       <div class="entry">
-        <label class="label">Model: </label>
-        <input class="textfield" formControlName="model" />      
+        <div class="inline-input"> 
+          <label class="label">Model: </label>
+          <input class="textfield" formControlName="model" />      
+        </div>
         <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.model.errors?.['maxlength'] && emailForm.controls.model.touched">* Enter Valid data</div>
       </div>
 
       <div class="entry">
-        <label class="label">Make: </label>
-        <input class="textfield" formControlName="make" />      
+        <div class="inline-input"> 
+          <label class="label">Make: </label>
+          <input class="textfield" formControlName="make" />      
+        </div>  
         <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.make.errors?.['maxlength'] && emailForm.controls.make.touched">* Enter in valid format</div>
       </div>
 
       <div class="entry">
-        <label class="label">Year: </label>
-        <input class="textfield" formControlName="year" />      
+        <div class="inline-input"> 
+          <label class="label">Year: </label>
+          <input class="textfield" formControlName="year" />      
+        </div>
         <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.year.errors?.['maxlength'] && emailForm.controls.year.touched">* Enter in valid format</div>
 
       </div>
 
       <div class="entry">
-        <label class="label">Mileage: </label>
-        <input class="textfield" formControlName="mileage" />      
+        <div class="inline-input"> 
+          <label class="label">Mileage: </label>
+          <input class="textfield" formControlName="mileage" />      
+        </div>
         <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.mileage.errors?.['maxlength'] && emailForm.controls.mileage.touched">* Enter in valid format</div>
 
       </div>
 
       <div class="entry">
-        <label class="label">Latitude (in  Decimal degrees (DD) format): </label>
-        <input class="textfield" formControlName="latitude" />      
+        <div class="inline-input"> 
+          <label class="label">Latitude:</label>
+          <input class="textfield" formControlName="latitude" />      
+        </div>
         <div class="text-danger mx-auto p-2" role="alert"  *ngIf="emailForm.controls.latitude.errors?.['maxlength'] && emailForm.controls.latitude.touched">* Enter in valid format</div>
-
       </div>
 
       <div class="entry">
-        <label class="label">Longitude in  Decimal degrees (DD) format: </label>
-        <input class="textfield" formControlName="longitude" />      
-        <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.longitude.errors?.['maxlength'] && emailForm.controls.longitude.touched">* ENTER IN VALID FORMAT</div>
+        <div class="inline-input"> 
+          <label class="label">Longitude:</label>
+          <input class="textfield" formControlName="longitude" />      
+        </div>
+        <div class="text-danger mx-auto p-2" role="alert" *ngIf="emailForm.controls.longitude.errors?.['maxlength'] 
+          && emailForm.controls.longitude.touched"
+        >* ENTER IN VALID FORMAT</div>
       </div>
 
       <!-- <div class="error" *ngIf="emailForm.controls.name.errors?.['email'] && emailForm.controls.name.touched">Invalid format.</div> -->
@@ -65,7 +78,7 @@
       <div class="modal-footer">
         
         <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
-        <button type="button" class="btn btn-primary" (click)="onSubmit()">Save changes</button>
+        <button type="button" class="btn btn-primary save" (click)="onSubmit()">Save changes</button>
         
       </div>
     </form>

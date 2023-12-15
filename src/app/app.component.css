@@ -1,8 +1,13 @@
+.all{
+    height: 87vh;
+    padding: 8vh 5vw; 
+}
 
 .lin{
     display: flex;
     padding-top: 3vw;
     margin-left: 32vw;
+    width: fit-content;
 }
 
 .hel{
@@ -12,7 +17,7 @@
 }
 
 .wel{
-    font-size: 36px;
+    font-size: 32px;
     font-family: monospace;
     margin-left: 6px;
 }
@@ -30,7 +35,7 @@
 
 .com{
     margin-top:45px;
-    margin-left: 3px;
+    /* margin-left: 3px; */
 
 }
 
@@ -43,7 +48,6 @@
 .des{
     font-size: large;
     margin: 20px 100px 20px 100px;
-
     padding-bottom: 25px;
     text-align: center;
 }
@@ -60,9 +64,7 @@
 
 .note{
     font-weight: bold;
-    margin-left: 27vw;
-    padding-bottom: 57px;
-    padding-top: 28px;
+    margin-left: 22vw;
 }
 
 .all{
@@ -71,8 +73,9 @@
 
 
 @media (max-width: 768px) {
+
     .lin{
-        padding-top: 28vw;
+        padding-top: 20vw;
         margin-left: 2vw;
     }
 
@@ -90,8 +93,8 @@
 
     .body{
         background-image: url(..\assets\Photos\background.jpg);
-        size:90%;
-        height:65vh;
+        margin: 0 5vw;
+        height: fit-content;
     }
 
     .com{
@@ -109,8 +112,7 @@
     
     .note{
         margin-left: 10vw;
-        padding-bottom: 57px;
-        padding-top: 28px;
+        padding-top: 3vh;
     }
 }
 

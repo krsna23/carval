@@ -57,6 +57,7 @@ export class EstimateComponent {
     latitude: 0,
     longitude: 0
   };
+  
   constructor(private modalService: NgbModal){}
 
   openModal(content: any){

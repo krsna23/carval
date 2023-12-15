@@ -24,16 +24,7 @@ export class ApiService {
 
   postData( carData: Car){
     //console.log("ApiSer data:", carData);
-    this.http.post(environment.apiUrl + '/estimate', carData).subscribe(
-      response => {
-        console.log("Data Posted");
-        // Handle the response here if needed
-      },
-      error => {
-        console.error("Error while posting data:", error);
-        // Handle the error here if needed
-      }
-    );;
+    this.http.post(environment.apiUrl + '/estimate', carData);
 
     
     //console.log("Data Posted");
