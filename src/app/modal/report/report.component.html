@@ -49,12 +49,17 @@
           <button [disabled]="emailForm.invalid" class="btn submit" type="submit">Submit</button>
         </div> -->
   
+        <div class="entry">
+          <label class="label" style="font-weight: bold;">Selling Price: </label>
+          <input class="textfield" />      
+        </div>
+
       </form>
       
       <!-- <p>Modal body text goes here.</p> -->
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
-      <button type="button" class="btn btn-primary" (click)="submitForm()">Save changes</button>
+      <button type="button" class="btn btn-primary save" (click)="submitForm()">Save changes</button>
     </div>
   </ng-template>

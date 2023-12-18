@@ -1,4 +1,4 @@
-.button{
+/* .button{
     font-size: 32px;
     background-color: #C53678;
     margin: 2vw 0 2vw 10vw;
@@ -23,4 +23,57 @@
         margin: 1vh 20vw;
         width:50vw;
     }
+} */
+
+
+.button{
+    font-size: 32px;
+    background-color: #C53678;
+    margin: 2vw 0 2vw 10vw;
+    color:white;
+    border: none;
+    border-radius: 20px;
+    width:27vw;
+}
+
+.modal-header{
+    background-color: #c4347c;
+    color: white;
+}
+
+.close{
+    color: #c4347c;
+    font-weight: 700;
+}
+
+.inline-input{
+    display: flex;
+    justify-content: space-around;
+}
+
+.entry{
+    margin-left: 4vw;
+    margin-bottom: 10px;
+}
+
+.label{
+    width: 10vw;
+}
+
+.textfield{
+    margin-right: 6vw;
+}
+
+.save{
+    background-color: #c4347c;
+    color: white;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .button{
+        font-size: 6vw;
+        margin: 2vh 20vw;
+        width:50vw;
+    }    
 }
